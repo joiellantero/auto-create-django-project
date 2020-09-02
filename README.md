@@ -43,3 +43,20 @@ A bash shell script that automates the creation of a django project. It also cre
   - you must run this first before using this automation program
 
 - run `django <projectName>`
+
+## Run
+
+```bash
+source ~/.auto.sh
+create <name-of-django-project>
+```
+
+## Author
+
+- Joie Llantero
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
