@@ -55,6 +55,7 @@ A bash shell script that automates the creation of a django project. It also cre
   source ~/.auto.sh
   django <name-of-django-project>
   ```
+- you may now run this in any directory, just run the two lines of commands above.
 
 ## Author
 
