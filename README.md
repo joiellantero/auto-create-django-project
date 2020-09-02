@@ -5,8 +5,8 @@ A bash shell script that automates the creation of a django project. It also cre
 ---
 ## Features
 - creates the project folder
-- create the django project with the name specified by the user
-- create a github repository for your project
+- creates the django project with the name specified by the user
+- creates a github repository for your project
 
 ## Setup
 - grab your copy by cloning the repo: `https://github.com/joiellantero/auto-create-django-project.git`
@@ -31,11 +31,16 @@ A bash shell script that automates the creation of a django project. It also cre
   ```
   - sample `FILEPATH` that saves the project in the desktop:  `/Users/<your-mac-username>/Desktop`
 
-- move `.auto.sh` and `.env` to your home directory, i.e., the directory with your Applications folder, Desktop, Documents, etc.
-
-- if you dont want to put it there, follow this intruction (havent written this yet. to follow)
+- move `setup.py`, `.auto.sh`, and `.env` to your home directory, i.e., the directory with your Applications folder, Desktop, Documents, etc.
+  - if you dont want to put it there, follow this intruction:
+    - move `setup.py`, `.auto.sh`, and `.env` to your chosen directory.
+    - open terminal and run `atom ~/.bashrc` or `code ~/.bashrc` (you may use `vim ~/.bashrc` if you want)
+    - place this inside in a new line: `export PATH="$PATH:<the-complete-path-to-your-folder>"`
+    - save the file. conitnue to the next steps.
 
 - navigate to the home folder and install the requirements by doing `pip install -r requirements.txt`
+
+## Run
 
 - then run `source ~/.auto.sh`
   - this works for the current session.
@@ -44,16 +49,20 @@ A bash shell script that automates the creation of a django project. It also cre
 
 - run `django <projectName>`
 
-## Run
+- your bash terminal should look like this
 
-```bash
-source ~/.auto.sh
-create <name-of-django-project>
-```
+  ```bash
+  source ~/.auto.sh
+  django <name-of-django-project>
+  ```
 
 ## Author
 
 - Joie Llantero
+
+## Contributors
+
+- feel free to send pull requests
 
 ## License
 
