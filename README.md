@@ -64,7 +64,7 @@ A bash shell script that automates the creation of a django project in just one 
 - your bash terminal should look like this
 
   ```bash
-  source .auto.sh <project-name>
+  bash-3.2$ source .auto.sh <project-name>
   ```
 
 - you may use this command in any directory yet it will still save your project in the directory you specified in `.env`
@@ -72,7 +72,7 @@ A bash shell script that automates the creation of a django project in just one 
 ---
 ## Author
 
-- Joie Llantero, Computer Engineering Student
+- Joie Llantero
 
 ---
 ## Contributors
