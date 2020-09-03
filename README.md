@@ -1,14 +1,18 @@
 # auto-create-django-project
 
-A bash shell script that automates the creation of a django project. It also creates a GitHub repository for you.
+A bash shell script that automates the creation of a django project in just one command. It also creates a GitHub repository for you!
 
 ---
 ## Features
 - creates the project folder
 - creates the django project with the name specified by the user
+- creates a local git repository
+- creates a .gitignore containing `.DS_Store`
 - creates a github repository for your project
 
+---
 ## Setup
+
 - grab your copy by cloning the repo: `https://github.com/joiellantero/auto-create-django-project.git`
 
 - if you're not seeing `.env` and `.auto.sh`, it's because they're hidden files. Don't worry, try to do `cmd + shift + .` to see them.
@@ -18,10 +22,10 @@ A bash shell script that automates the creation of a django project. It also cre
 - here in github, go to `settings` > `developer settings` > `personal access tokens` > `generate new token`
 
 - name your token to `auto` and check `repo - Full control of private repositories` and `user - Update all user data`
-  - we need this so that the script can create a repo for us when run it.
-  - make sure that your credentials are set up in your git config
+  - we need this so that the script can create a repo for us when we run it.
+  - make sure that your credentials are already set up in your git config
 
-- edit the `.env` by filling up the necessary info. Place your info inside the double quotation marks like `USERNAME=JohnDoe`
+- edit the `.env` by filling up the necessary info. Place your info inside the double quotation marks like `USERNAME=JohnDoe`. I've set up the code editor by default to atom but feel free to change it to your favorite code editor.
 
   ```plaintext
   FILEPATH="<put the filepath where you want your project to be saved>"
@@ -29,27 +33,24 @@ A bash shell script that automates the creation of a django project. It also cre
   API="<put your generated new token here>"
   CODE_EDITOR="atom"
   ```
-  - sample `FILEPATH` that saves the project in the desktop:  `/Users/<your-mac-username>/Desktop`
+  - here's a sample `FILEPATH` that saves the project on your desktop:  `/Users/<your-mac-username>/Desktop`
 
-- move `setup.py`, `.auto.sh`, and `.env` to your home directory, i.e., the directory with your Applications folder, Desktop, Documents, etc.
+- install the requirements by doing `pip install -r requirements.txt`
 
-- navigate to the home folder and install the requirements by doing `pip install -r requirements.txt`
+- move `setup.py`, `.auto.sh`, `.env` to your home directory, i.e., the directory containing your Applications folder, Desktop, Documents, etc
+  - `Macintosh HD` > `Users` > `<your-mac-username>`
 
 ## Run
 
-- run `source .auto.sh`
-  - this works for the current session.
-  - once you close your terminal this goes away.
-  - you must run this first before using this automation program
+> Here's the one-line command that saves you minutes of setting up your new django project!
 
-- run `django <projectName>`
-
-- if you're on zsh terminal, type in `bash` and press enter.
+- open up a new terminal and type in `source .auto.sh <projectName>`
+  - if you're on zsh terminal, type in `bash` and press enter. Then proceed by running the one-line command above
 
 - your bash terminal should look like this
 
   ```bash
-  source .auto.sh <django-project-name>
+  source .auto.sh <project-name>
   ```
 
 - you may use this command in any directory yet it will still save your project in the directory you specified in `.env`
@@ -60,7 +61,7 @@ A bash shell script that automates the creation of a django project. It also cre
 
 ## Contributors
 
-- feel free to send pull requests
+- feel free to make pull requests
 
 ## License
 
