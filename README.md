@@ -35,7 +35,7 @@ A bash shell script that automates the creation of a django project in just one 
   ```
   - here's a sample `FILEPATH` that saves the project on your desktop:  `/Users/<your-mac-username>/Desktop`
 
-- install the requirements by doing `pip install -r requirements.txt`
+- open up a terminal and navigate to where you cloned the repo then install the requirements by running `pip install -r requirements.txt`.
 
 - move `setup.py`, `.auto.sh`, `.env` to your home directory, i.e., the directory containing your Applications folder, Desktop, Documents, etc
   - `Macintosh HD` > `Users` > `<your-mac-username>`
@@ -45,7 +45,7 @@ A bash shell script that automates the creation of a django project in just one 
 > Here's the one-line command that saves you minutes of setting up your new django project!
 
 - open up a new terminal and type in `source .auto.sh <projectName>`
-  - if you're on zsh terminal, type in `bash` and press enter. Then proceed by running the one-line command above
+  - if you're on zsh terminal, type in `bash` and press enter. Then proceed by running the command above
 
 - your bash terminal should look like this
 
