@@ -1,5 +1,8 @@
 # auto-create-django-project
 
+[![Build status](https://ci.appveyor.com/api/projects/status/i7cynp6mrum24kv0/branch/master?svg=true)](https://ci.appveyor.com/project/joiellantero/auto-create-django-project/branch/master)
+<img src="https://img.shields.io/github/license/joiellantero/auto-create-django-project" alt="License MIT">
+
 A bash shell script that automates the creation of a django project in just one command. It also creates a GitHub repository for you!
 
 ---
