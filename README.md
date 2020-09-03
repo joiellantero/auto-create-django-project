@@ -6,9 +6,10 @@ A bash shell script that automates the creation of a django project in just one 
 
 ---
 ## Prerequisites
-- Python v3
-- Pip
-- Virtualenv
+- python v3
+- pip
+- virtualenv
+- git
 
 ---
 ## Features
